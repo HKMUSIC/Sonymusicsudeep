@@ -26,7 +26,9 @@ def private_panel(_):
         ],
         [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
         InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
+        InlineKeyboardButton("ᴍʏ ʟᴏʀᴅ", url=f"https://t.me/AJAY_OWN"),
             #InlineKeyboardButton(text=_["S_B_7"], url=config.UPSTREAM_REPO),
         ],
     ]
     return buttons
+
