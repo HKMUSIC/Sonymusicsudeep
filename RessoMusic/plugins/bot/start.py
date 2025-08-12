@@ -27,9 +27,9 @@ from strings import get_string
 from RessoMusic.misc import SUDOERS
 
 YUMI_PICS = [
-"https://files.catbox.moe/x832ly.jpg",
-"https://files.catbox.moe/y2to84.jpg",
-"https://files.catbox.moe/qmdqx8.jpg",
+"https://files.catbox.moe/cp1zqp.jpg",
+"https://files.catbox.moe/gpfuap.jpg",
+"https://files.catbox.moe/pkf6hy.jpg",
 ]
 
 
@@ -218,3 +218,4 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
         except Exception as ex:
             print(ex)
+
