@@ -9,7 +9,7 @@ from pyrogram.enums import *
 
 #BOT FILE NAME
 from RessoMusic import app as app
-from RessoMusic.mongo.couples_db import _get_image, get_couple
+from RessoMusic.core.couples_db import _get_image, get_couple
 
 POLICE = [
     [
