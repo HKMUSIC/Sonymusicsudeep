@@ -8,6 +8,34 @@ from RessoMusic.utils.formatters import time_to_seconds
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
+            [
+            InlineKeyboardButton(text=" ᴜᴘᴅᴀᴛᴇ ", url="https://t.me/GOJO_SUPPORT_GROUP_II",),
+            InlineKeyboardButton(text=" sᴜᴘᴘᴏʀᴛ ", url="https://t.me/hehe_heeeeee",),
+        ],
+        
+     [
+            InlineKeyboardButton("˹ʏᴏʀsᴀ ᴛᴜɴᴇs˼♪", url=f"https://yorsa-mini-app.vercel.app/"),
+        ],
+
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+    ]
+    return buttons
+
+
+def stream_markup(_, chat_id):
+    buttons = [
+
+        
+        [
+            InlineKeyboardButton(text=" ᴜᴘᴅᴀᴛᴇ ", url="https://t.me/GOJO_SUPPORT_GROUP_II",),
+            InlineKeyboardButton(text=" sᴜᴘᴘᴏʀᴛ ", url="https://t.me/hehe_heeeeee",),
+        ],
+        [
+            InlineKeyboardButton("˹ʏᴏʀsᴀ ᴛᴜɴᴇs˼♪", url=f"https://yorsa-mini-app.vercel.app/"),
+        ],
+       
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+    ]
             InlineKeyboardButton(
                 text=_["P_B_1"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
