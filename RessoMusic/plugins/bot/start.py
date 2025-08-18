@@ -76,9 +76,6 @@ async def start_pm(client, message: Message, _):
     await loading_1.delete()
 
 
-@app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
-@LanguageStart
-async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
@@ -264,6 +261,7 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
         except Exception as ex:
             print(ex)
+
 
 
 
