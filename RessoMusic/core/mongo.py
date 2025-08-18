@@ -13,8 +13,3 @@ except:
     LOGGER(__name__).error("Failed to connect to your Mongo Database.")
     exit()
 
-async def _get_image():
-    return None
-
-async def get_couple():
-    return None
